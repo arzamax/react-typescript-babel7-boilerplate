@@ -6,7 +6,7 @@ import './styles.css';
 class App extends PureComponent {
   public render() {
     return (
-      <div>Hello world!</div>
+      <div {...this.props}>Hello world!</div>
     );
   }
 }
