@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "allowJs": true,
     "noEmit": true,
@@ -11,6 +11,10 @@
     "experimentalDecorators": true,
     "esModuleInterop": true
   },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist"
