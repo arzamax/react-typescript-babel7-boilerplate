@@ -19,7 +19,7 @@ const MiniCssExtractPluginConfig = new MiniCssExtractPlugin({
 });
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'index.tsx'),
+  entry: ['@babel/polyfill', path.join(__dirname, 'src', 'index.tsx')],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
   },
