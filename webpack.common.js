@@ -31,7 +31,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          process.env.NODE_ENV === 'development'
+            ? 'style-loader'
+            : MiniCssExtractPlugin.loader,
+          'css-loader']
       },
       {
         test: /\.(jpe?g|png|gif|svg|woff(2)?|ttf|eot|)$/i,
